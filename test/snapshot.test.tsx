@@ -2,8 +2,6 @@ import React from 'react';
 import renderer from 'react-test-renderer';
 import {
   AppStoreButton,
-  GraduationIcon,
-  ToolsIcon,
   PoonjiLogo,
   PoonjiTitle,
   SamiroyLogo,
@@ -16,14 +14,6 @@ import {
 describe('snapshot tests', () => {
   it('should render app store button', () => {
     const tree = renderer.create(<AppStoreButton />).toJSON();
-    expect(tree).toMatchSnapshot();
-  });
-  it('should render graduation icon', () => {
-    const tree = renderer.create(<GraduationIcon />).toJSON();
-    expect(tree).toMatchSnapshot();
-  });
-  it('should render tools icon', () => {
-    const tree = renderer.create(<ToolsIcon />).toJSON();
     expect(tree).toMatchSnapshot();
   });
   it('should render poonji logo', () => {
