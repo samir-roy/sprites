@@ -1,6 +1,6 @@
 {
   "name": "@samiroy/sprites",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Sprites for use on Samiroy branded websites",
   "main": "dist-pkg/index.js",
   "module": "dist-pkg/index.js",
@@ -40,7 +40,7 @@
     "build:types": "tsc --declaration --outDir dist-pkg/ --emitDeclarationOnly --declarationMap",
     "clean": "del-cli --force dist-pkg",
     "lint": "eslint ./src --quiet --ext .js,.ts,.tsx && eslint ./test --quiet --ext .ts,.tsx",
-    "test": "jest test/",
+    "test": "npm run build && jest test/",
     "typecheck": "tsc --noEmit"
   },
   "dependencies": {
