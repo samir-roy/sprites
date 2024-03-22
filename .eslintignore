@@ -1,0 +1,6 @@
+/dist-pkg/
+/lib/
+/public/
+**/node_modules/
+**/*.bundle.js
+/*.js

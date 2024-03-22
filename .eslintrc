@@ -1,0 +1,17 @@
+{
+  "env": {
+    "browser": true,
+    "jquery": false
+  },
+  "parser": "@typescript-eslint/parser",
+  "extends": ["@samiroy/eslint-config"],
+  "parserOptions": { "project": "./tsconfig.json" },
+  "overrides": [
+    {
+      "files": ["test/*.tsx"],
+      "parserOptions": {
+        "project": "test/tsconfig.json",
+      }
+    }
+  ]
+}
