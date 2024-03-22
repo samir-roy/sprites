@@ -1,6 +1,4 @@
 import AppStoreButton from './vector/common/AppStoreButton';
-import GraduationIcon from './vector/common/GraduationIcon';
-import ToolsIcon from './vector/common/ToolsIcon';
 
 import PoonjiLogo from './vector/poonji/PoonjiLogo';
 import PoonjiTitle from './vector/poonji/PoonjiTitle';
@@ -15,8 +13,6 @@ import EndlessTrafficAnimatedLogo from './animated/traffic/EndlessTrafficAnimate
 
 export {
   AppStoreButton,
-  GraduationIcon,
-  ToolsIcon,
   PoonjiLogo,
   PoonjiTitle,
   PoonjiAnimatedLogo,
