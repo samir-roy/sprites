@@ -1,45 +1,37 @@
 import * as React from 'react';
 import SamiroyLogo from '../../vector/samiroy/SamiroyLogo';
-import PongAnimation from './PongAnimation';
+import MatrixAnimation from './MatrixAnimation';
 
 const SamiroyAnimatedLogo = () => (
-  <div style={styles.wrapper}>
-    <div style={styles.container}>
-      <div style={styles.animation}>
-        <PongAnimation />
-      </div>
-      <div style={styles.logo}>
-        <SamiroyLogo style={styles.sprite} />
-      </div>
+  <div style={styles.container}>
+    <div style={styles.animation}>
+      <MatrixAnimation />
+    </div>
+    <div style={styles.logo}>
+      <SamiroyLogo style={styles.sprite} />
     </div>
   </div>
 );
 
 const styles: Record<string, React.CSSProperties> = {
-  wrapper: {
-    overflow: 'clip',
-    height: 150,
-  },
   container: {
     display: 'inline-block',
     margin: 'auto',
-    width: 'calc(100%)',
-    height: 150,
-    maxWidth: 360,
+    position: 'relative',
   },
   animation: {
+    top: 18,
+    left: 36,
     position: 'absolute',
-    width: 'calc(100%)',
-    display: 'contents',
+    zIndex: 1,
   },
   logo: {
     display: 'inline-block',
-    top: -138,
     position: 'relative',
   },
   sprite: {
-    height: 128,
-    width: 116,
+    height: 192,
+    width: 174,
   },
 };
 
