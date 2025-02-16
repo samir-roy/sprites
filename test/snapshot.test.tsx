@@ -1,5 +1,5 @@
 import React from 'react';
-import renderer from 'react-test-renderer';
+import { render } from '@testing-library/react';
 import {
   AppStoreButton,
   PoonjiLogo,
@@ -13,35 +13,35 @@ import {
 
 describe('snapshot tests', () => {
   it('should render app store button', () => {
-    const tree = renderer.create(<AppStoreButton />).toJSON();
-    expect(tree).toMatchSnapshot();
+    const { container } = render(<AppStoreButton />);
+    expect(container).toMatchSnapshot();
   });
   it('should render poonji logo', () => {
-    const tree = renderer.create(<PoonjiLogo />).toJSON();
-    expect(tree).toMatchSnapshot();
+    const { container } = render(<PoonjiLogo />);
+    expect(container).toMatchSnapshot();
   });
   it('should render poonji title', () => {
-    const tree = renderer.create(<PoonjiTitle />).toJSON();
-    expect(tree).toMatchSnapshot();
+    const { container } = render(<PoonjiTitle />);
+    expect(container).toMatchSnapshot();
   });
   it('should render samiroy logo', () => {
-    const tree = renderer.create(<SamiroyLogo />).toJSON();
-    expect(tree).toMatchSnapshot();
+    const { container } = render(<SamiroyLogo />);
+    expect(container).toMatchSnapshot();
   });
   it('should render samiroy title', () => {
-    const tree = renderer.create(<SamiroyTitle />).toJSON();
-    expect(tree).toMatchSnapshot();
+    const { container } = render(<SamiroyTitle />);
+    expect(container).toMatchSnapshot();
   });
   it('should render samiroy animation', () => {
-    const tree = renderer.create(<SamiroyAnimatedLogo />).toJSON();
-    expect(tree).toMatchSnapshot();
+    const { container } = render(<SamiroyAnimatedLogo />);
+    expect(container).toMatchSnapshot();
   });
   it('should render endless traffic title', () => {
-    const tree = renderer.create(<EndlessTrafficTitle />).toJSON();
-    expect(tree).toMatchSnapshot();
+    const { container } = render(<EndlessTrafficTitle />);
+    expect(container).toMatchSnapshot();
   });
   it('should render endless traffic animation', () => {
-    const tree = renderer.create(<EndlessTrafficAnimatedLogo />).toJSON();
-    expect(tree).toMatchSnapshot();
+    const { container } = render(<EndlessTrafficAnimatedLogo />);
+    expect(container).toMatchSnapshot();
   });
 });
