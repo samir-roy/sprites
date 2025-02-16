@@ -6,4 +6,5 @@ module.exports = {
   moduleNameMapper: {
     '\\.(css|less)$': '<rootDir>/test/css-stub.tsx',
   },
+  testEnvironment: 'jsdom',
 };
