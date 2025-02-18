@@ -8,6 +8,7 @@ import SamiroyLogo from './vector/samiroy/SamiroyLogo';
 import SamiroyTitle from './vector/samiroy/SamiroyTitle';
 import SamiroyAnimatedLogo from './animated/samiroy/SamiroyAnimatedLogo';
 import SamiroyAnimatedLogoPong from './animated/samiroy/SamiroyAnimatedLogoPong';
+import SamiroyBlueprintLogo from './vector/samiroy/SamiroyBlueprintLogo';
 
 import EndlessTrafficTitle from './vector/traffic/EndlessTrafficTitle';
 import EndlessTrafficAnimatedLogo from './animated/traffic/EndlessTrafficAnimatedLogo';
@@ -21,6 +22,7 @@ export {
   SamiroyTitle,
   SamiroyAnimatedLogo,
   SamiroyAnimatedLogoPong,
+  SamiroyBlueprintLogo,
   EndlessTrafficTitle,
   EndlessTrafficAnimatedLogo,
 };
