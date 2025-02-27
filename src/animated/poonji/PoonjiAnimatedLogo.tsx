@@ -435,7 +435,7 @@ const PoonjiLogo = ({
         <animate attributeName="opacity" values="1;0;0;0;0;0" dur="3s" repeatCount="indefinite" />
       </circle>
       <circle cx="17" cy="103" r="2" fill="none" stroke="var(--poonji-shadow-color)" strokeWidth="2" opacity="0">
-        <animate attributeName="r" values="2;8;8;8;8;8" dur="1.5s" repeatCount="indefinite" />
+        <animate attributeName="r" values="2;8;8;8;8;8" dur="3s" repeatCount="indefinite" />
         <animate attributeName="opacity" values="1;0;0;0;0;0" dur="3s" repeatCount="indefinite" />
       </circle>
 
