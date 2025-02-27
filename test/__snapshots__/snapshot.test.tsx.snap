@@ -418,7 +418,7 @@ exports[`snapshot tests should render endless traffic title 1`] = `
 exports[`snapshot tests should render poonji logo 1`] = `
 <div>
   <div
-    style="width: 128px; height: 128px;"
+    style="width: 192px; height: 192px;"
   >
     <svg
       fill="none"
