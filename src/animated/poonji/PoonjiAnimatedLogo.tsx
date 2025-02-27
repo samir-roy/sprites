@@ -414,6 +414,41 @@ const PoonjiLogo = ({
           />
         </path>
       </g>
+      <defs>
+        <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+          <feGaussianBlur stdDeviation="2" result="blur" />
+          <feComposite in="SourceGraphic" in2="blur" operator="over" />
+        </filter>
+      </defs>
+      <circle cx="110" cy="103" r="2" fill="none" stroke="var(--poonji-shadow-color)" strokeWidth="2" opacity="0">
+        <animate attributeName="r" values="2;8;8;8;8;8" dur="3s" repeatCount="indefinite" />
+        <animate attributeName="opacity" values="1;0;0;0;0;0" dur="3s" repeatCount="indefinite" />
+      </circle>
+
+      <circle cx="103" cy="18" r="2" fill="none" stroke="var(--poonji-shadow-color)" strokeWidth="2" opacity="0">
+        <animate attributeName="r" values="2;8;8;8;8;8" dur="3s" repeatCount="indefinite" />
+        <animate attributeName="opacity" values="1;0;0;0;0;0" dur="3s" repeatCount="indefinite" />
+      </circle>
+
+      <circle cx="110" cy="55" r="2" fill="none" stroke="var(--poonji-shadow-color)" strokeWidth="2" opacity="0">
+        <animate attributeName="r" values="2;8;8;8;8;8" dur="3s" repeatCount="indefinite" />
+        <animate attributeName="opacity" values="1;0;0;0;0;0" dur="3s" repeatCount="indefinite" />
+      </circle>
+      <circle cx="17" cy="103" r="2" fill="none" stroke="var(--poonji-shadow-color)" strokeWidth="2" opacity="0">
+        <animate attributeName="r" values="2;8;8;8;8;8" dur="1.5s" repeatCount="indefinite" />
+        <animate attributeName="opacity" values="1;0;0;0;0;0" dur="3s" repeatCount="indefinite" />
+      </circle>
+
+      <circle cx="25" cy="18" r="2" fill="none" stroke="var(--poonji-shadow-color)" strokeWidth="2" opacity="0">
+        <animate attributeName="r" values="2;8;8;8;8;8" dur="3s" repeatCount="indefinite" />
+        <animate attributeName="opacity" values="1;0;0;0;0;0" dur="3s" repeatCount="indefinite" />
+      </circle>
+
+      <circle cx="17" cy="55" r="2" fill="none" stroke="var(--poonji-shadow-color)" strokeWidth="2" opacity="0">
+        <animate attributeName="r" values="2;8;8;8;8;8" dur="3s" repeatCount="indefinite" />
+        <animate attributeName="opacity" values="1;0;0;0;0;0" dur="3s" repeatCount="indefinite" />
+      </circle>
+
       <path
         fillRule="evenodd"
         clipRule="evenodd"
@@ -510,6 +545,118 @@ const PoonjiLogo = ({
         d="M20.5 54.625C20.5 53.1753 19.3247 52 17.875 52H17.125C15.6753 52 14.5 53.1753 14.5 54.625V55.375C14.5 56.8247 15.6753 58 17.125 58H17.875C19.3247 58 20.5 56.8247 20.5 55.375V54.625ZM17.875 54.25C18.0821 54.25 18.25 54.4179 18.25 54.625V55.375C18.25 55.5821 18.0821 55.75 17.875 55.75H17.125C16.9179 55.75 16.75 55.5821 16.75 55.375V54.625C16.75 54.4179 16.9179 54.25 17.125 54.25H17.875Z"
         fill={circuitColor}
       />
+
+      <path
+        d="M125 37.5L125 65.8089L111 86.3089L111 101"
+        fill="none"
+        stroke="var(--background-color)"
+        strokeWidth="2"
+        strokeOpacity="0.7"
+        strokeLinecap="round"
+        strokeDasharray="16,24"
+      >
+        <animate attributeName="stroke-dashoffset" from="0" to="40" dur="4.5s" repeatCount="indefinite" />
+      </path>
+      <path
+        d="M118 31.0401L118 62"
+        fill="none"
+        stroke="var(--background-color)"
+        strokeWidth="2"
+        strokeOpacity="0.7"
+        strokeLinecap="round"
+        strokeDasharray="16,24"
+      >
+        <animate attributeName="stroke-dashoffset" from="0" to="40" dur="4.5s" repeatCount="indefinite" />
+      </path>
+      <path
+        d="M111 37.0194L111 46"
+        fill="none"
+        stroke="var(--background-color)"
+        strokeWidth="2"
+        strokeOpacity="0.7"
+        strokeLinecap="round"
+        strokeDasharray="16,24"
+      >
+        <animate attributeName="stroke-dashoffset" from="0" to="40" dur="4.5s" repeatCount="indefinite" />
+      </path>
+      <path
+        d="M101.5 31.9806L101.5 20"
+        fill="none"
+        stroke="var(--background-color)"
+        strokeWidth="2"
+        strokeOpacity="0.7"
+        strokeLinecap="round"
+        strokeDasharray="16,24"
+      >
+        <animate attributeName="stroke-dashoffset" from="40" to="0" dur="4.5s" repeatCount="indefinite" />
+      </path>
+      <path
+        d="M111 57L111 65.8085L103.326 77.0633"
+        fill="none"
+        stroke="var(--background-color)"
+        strokeWidth="2"
+        strokeOpacity="0.7"
+        strokeLinecap="round"
+        strokeDasharray="16,24"
+      >
+        <animate attributeName="stroke-dashoffset" from="0" to="40" dur="4.5s" repeatCount="indefinite" />
+      </path>
+      <path
+        d="M2.5 37.5L2.5 65.8089L16.5 86.3089L16.5 101"
+        fill="none"
+        stroke="var(--background-color)"
+        strokeWidth="2"
+        strokeOpacity="0.7"
+        strokeLinecap="round"
+        strokeDasharray="16,24"
+      >
+        <animate attributeName="stroke-dashoffset" from="0" to="40" dur="4.5s" repeatCount="indefinite" />
+      </path>
+      <path
+        d="M9.5 31.0401L9.5 62"
+        fill="none"
+        stroke="var(--background-color)"
+        strokeWidth="2"
+        strokeOpacity="0.7"
+        strokeLinecap="round"
+        strokeDasharray="16,24"
+      >
+        <animate attributeName="stroke-dashoffset" from="0" to="40" dur="4.5s" repeatCount="indefinite" />
+      </path>
+      <path
+        d="M16.5 37.0194L16.5 46"
+        fill="none"
+        stroke="var(--background-color)"
+        strokeWidth="2"
+        strokeOpacity="0.7"
+        strokeLinecap="round"
+        strokeDasharray="16,24"
+      >
+        <animate attributeName="stroke-dashoffset" from="0" to="40" dur="4.5s" repeatCount="indefinite" />
+      </path>
+      <path
+        d="M26 31.9806L26 20"
+        fill="none"
+        stroke="var(--background-color)"
+        strokeWidth="2"
+        strokeOpacity="0.7"
+        strokeLinecap="round"
+        strokeDasharray="16,24"
+      >
+        <animate attributeName="stroke-dashoffset" from="40" to="0" dur="4.5s" repeatCount="indefinite" />
+      </path>
+      <path
+        d="M16.5 57L16.5 65.8085L24.1738 77.0633"
+        fill="none"
+        stroke="var(--background-color)"
+        strokeWidth="2"
+        strokeOpacity="0.7"
+        strokeLinecap="round"
+        strokeDasharray="16,24"
+      >
+        <animate attributeName="stroke-dashoffset" from="0" to="40" dur="4.5s" repeatCount="indefinite" />
+      </path>
+
       <defs>
         <clipPath id="clip0_1641_132">
           <rect width="128" height="128" fill="white" />
