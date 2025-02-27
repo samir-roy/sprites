@@ -1,8 +1,8 @@
 import * as React from 'react';
 
 const defaultStyle = {
-  width: 128,
-  height: 128,
+  width: 192,
+  height: 192,
 } as React.CSSProperties;
 
 type Props = {
