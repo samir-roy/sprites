@@ -12,6 +12,8 @@ type Props = {
   circuitShadowColor?: string;
   outlineColor?: string;
   candleColor?: string;
+  electricColor?: string;
+  signalColor?: string;
 };
 
 const PoonjiLogo = ({
@@ -20,6 +22,8 @@ const PoonjiLogo = ({
   circuitShadowColor = 'var(--poonji-shadow-color)',
   outlineColor = 'var(--poonji-outline-color)',
   candleColor = 'var(--poonji-candle-color)',
+  electricColor = 'var(--background-color)',
+  signalColor = '#DD7797',
 }: Props = {}) => (
   <div style={{ ...defaultStyle, ...style }}>
     <svg
@@ -420,33 +424,30 @@ const PoonjiLogo = ({
           <feComposite in="SourceGraphic" in2="blur" operator="over" />
         </filter>
       </defs>
-      <circle cx="110" cy="103" r="2" fill="none" stroke="var(--poonji-shadow-color)" strokeWidth="2" opacity="0">
-        <animate attributeName="r" values="2;8;8;8;8;8" dur="3s" repeatCount="indefinite" />
-        <animate attributeName="opacity" values="1;0;0;0;0;0" dur="3s" repeatCount="indefinite" />
-      </circle>
 
-      <circle cx="103" cy="18" r="2" fill="none" stroke="var(--poonji-shadow-color)" strokeWidth="2" opacity="0">
-        <animate attributeName="r" values="2;8;8;8;8;8" dur="3s" repeatCount="indefinite" />
-        <animate attributeName="opacity" values="1;0;0;0;0;0" dur="3s" repeatCount="indefinite" />
+      <circle cx="110" cy="103" r="2" fill="none" stroke={signalColor} strokeWidth="2" opacity="0">
+        <animate attributeName="r" values="2;8;8;8;8;8" dur="3s" repeatCount="indefinite" begin="0s" />
+        <animate attributeName="opacity" values="1;0;0;0;0;0" dur="3s" repeatCount="indefinite" begin="0s" />
       </circle>
-
-      <circle cx="110" cy="55" r="2" fill="none" stroke="var(--poonji-shadow-color)" strokeWidth="2" opacity="0">
-        <animate attributeName="r" values="2;8;8;8;8;8" dur="3s" repeatCount="indefinite" />
-        <animate attributeName="opacity" values="1;0;0;0;0;0" dur="3s" repeatCount="indefinite" />
+      <circle cx="103" cy="18" r="2" fill="none" stroke={signalColor} strokeWidth="2" opacity="0">
+        <animate attributeName="r" values="2;8;8;8;8;8" dur="3s" repeatCount="indefinite" begin="1s" />
+        <animate attributeName="opacity" values="1;0;0;0;0;0" dur="3s" repeatCount="indefinite" begin="1s" />
       </circle>
-      <circle cx="17" cy="103" r="2" fill="none" stroke="var(--poonji-shadow-color)" strokeWidth="2" opacity="0">
-        <animate attributeName="r" values="2;8;8;8;8;8" dur="3s" repeatCount="indefinite" />
-        <animate attributeName="opacity" values="1;0;0;0;0;0" dur="3s" repeatCount="indefinite" />
+      <circle cx="110" cy="55" r="2" fill="none" stroke={signalColor} strokeWidth="2" opacity="0">
+        <animate attributeName="r" values="2;8;8;8;8;8" dur="3s" repeatCount="indefinite" begin="2.5s" />
+        <animate attributeName="opacity" values="1;0;0;0;0;0" dur="3s" repeatCount="indefinite" begin="2.5s" />
       </circle>
-
-      <circle cx="25" cy="18" r="2" fill="none" stroke="var(--poonji-shadow-color)" strokeWidth="2" opacity="0">
-        <animate attributeName="r" values="2;8;8;8;8;8" dur="3s" repeatCount="indefinite" />
-        <animate attributeName="opacity" values="1;0;0;0;0;0" dur="3s" repeatCount="indefinite" />
+      <circle cx="17" cy="103" r="2" fill="none" stroke={signalColor} strokeWidth="2" opacity="0">
+        <animate attributeName="r" values="2;8;8;8;8;8" dur="3s" repeatCount="indefinite" begin="1.5s" />
+        <animate attributeName="opacity" values="1;0;0;0;0;0" dur="3s" repeatCount="indefinite" begin="1.5s" />
       </circle>
-
-      <circle cx="17" cy="55" r="2" fill="none" stroke="var(--poonji-shadow-color)" strokeWidth="2" opacity="0">
-        <animate attributeName="r" values="2;8;8;8;8;8" dur="3s" repeatCount="indefinite" />
-        <animate attributeName="opacity" values="1;0;0;0;0;0" dur="3s" repeatCount="indefinite" />
+      <circle cx="25" cy="18" r="2" fill="none" stroke={signalColor} strokeWidth="2" opacity="0">
+        <animate attributeName="r" values="2;8;8;8;8;8" dur="3s" repeatCount="indefinite" begin="2s" />
+        <animate attributeName="opacity" values="1;0;0;0;0;0" dur="3s" repeatCount="indefinite" begin="2s" />
+      </circle>
+      <circle cx="17" cy="55" r="2" fill="none" stroke={signalColor} strokeWidth="2" opacity="0">
+        <animate attributeName="r" values="2;8;8;8;8;8" dur="3s" repeatCount="indefinite" begin="0.5s" />
+        <animate attributeName="opacity" values="1;0;0;0;0;0" dur="3s" repeatCount="indefinite" begin="0.5s" />
       </circle>
 
       <path
@@ -549,7 +550,7 @@ const PoonjiLogo = ({
       <path
         d="M125 37.5L125 65.8089L111 86.3089L111 101"
         fill="none"
-        stroke="var(--background-color)"
+        stroke={electricColor}
         strokeWidth="2"
         strokeOpacity="0.7"
         strokeLinecap="round"
@@ -560,7 +561,7 @@ const PoonjiLogo = ({
       <path
         d="M118 31.0401L118 62"
         fill="none"
-        stroke="var(--background-color)"
+        stroke={electricColor}
         strokeWidth="2"
         strokeOpacity="0.7"
         strokeLinecap="round"
@@ -571,7 +572,7 @@ const PoonjiLogo = ({
       <path
         d="M111 37.0194L111 46"
         fill="none"
-        stroke="var(--background-color)"
+        stroke={electricColor}
         strokeWidth="2"
         strokeOpacity="0.7"
         strokeLinecap="round"
@@ -582,7 +583,7 @@ const PoonjiLogo = ({
       <path
         d="M101.5 31.9806L101.5 20"
         fill="none"
-        stroke="var(--background-color)"
+        stroke={electricColor}
         strokeWidth="2"
         strokeOpacity="0.7"
         strokeLinecap="round"
@@ -593,7 +594,7 @@ const PoonjiLogo = ({
       <path
         d="M111 57L111 65.8085L103.326 77.0633"
         fill="none"
-        stroke="var(--background-color)"
+        stroke={electricColor}
         strokeWidth="2"
         strokeOpacity="0.7"
         strokeLinecap="round"
@@ -604,7 +605,7 @@ const PoonjiLogo = ({
       <path
         d="M2.5 37.5L2.5 65.8089L16.5 86.3089L16.5 101"
         fill="none"
-        stroke="var(--background-color)"
+        stroke={electricColor}
         strokeWidth="2"
         strokeOpacity="0.7"
         strokeLinecap="round"
@@ -615,7 +616,7 @@ const PoonjiLogo = ({
       <path
         d="M9.5 31.0401L9.5 62"
         fill="none"
-        stroke="var(--background-color)"
+        stroke={electricColor}
         strokeWidth="2"
         strokeOpacity="0.7"
         strokeLinecap="round"
@@ -626,7 +627,7 @@ const PoonjiLogo = ({
       <path
         d="M16.5 37.0194L16.5 46"
         fill="none"
-        stroke="var(--background-color)"
+        stroke={electricColor}
         strokeWidth="2"
         strokeOpacity="0.7"
         strokeLinecap="round"
@@ -637,7 +638,7 @@ const PoonjiLogo = ({
       <path
         d="M26 31.9806L26 20"
         fill="none"
-        stroke="var(--background-color)"
+        stroke={electricColor}
         strokeWidth="2"
         strokeOpacity="0.7"
         strokeLinecap="round"
@@ -648,7 +649,7 @@ const PoonjiLogo = ({
       <path
         d="M16.5 57L16.5 65.8085L24.1738 77.0633"
         fill="none"
-        stroke="var(--background-color)"
+        stroke={electricColor}
         strokeWidth="2"
         strokeOpacity="0.7"
         strokeLinecap="round"
