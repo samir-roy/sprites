@@ -1,32 +1,23 @@
-import type { Meta, StoryObj } from '@storybook/react';
+import * as React from 'react';
 import SamiroyTitle from '../src/vector/samiroy/SamiroyTitle';
-import AnimateGlitch from '../src/animated/samiroy/AnimateGlitch';
+import AnimateGlitches from '../src/animated/samiroy/AnimateGlitches';
 
-const meta: Meta<typeof SamiroyTitle> = {
-  title: 'Samiroy/SamiroyTitle',
+const meta = {
+  title: 'Samiroy Title ',
   component: SamiroyTitle,
   parameters: {
     layout: 'centered',
   },
-  tags: ['autodocs'],
 };
 
 export default meta;
-type Story = StoryObj<typeof SamiroyTitle>;
-
-export const Basic: Story = {
-  args: {
-    style: { width: 400, height: 80 },
-  },
-};
-
-export const Animated: Story = {
+export const Animated = {
   args: {
     style: { width: 400, height: 80 },
   },
   render: (args) => (
     <>
-      <AnimateGlitch />
+      <AnimateGlitches />
       <SamiroyTitle {...args} />
     </>
   ),

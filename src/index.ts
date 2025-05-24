@@ -9,7 +9,7 @@ import SamiroyTitle from './vector/samiroy/SamiroyTitle';
 import SamiroyAnimatedLogo from './animated/samiroy/SamiroyAnimatedLogo';
 import SamiroyAnimatedLogoPong from './animated/samiroy/SamiroyAnimatedLogoPong';
 import SamiroyBlueprintLogo from './vector/samiroy/SamiroyBlueprintLogo';
-import AnimateGlitch from './animated/samiroy/AnimateGlitch';
+import AnimateGlitches from './animated/samiroy/AnimateGlitches';
 
 import EndlessTrafficTitle from './vector/traffic/EndlessTrafficTitle';
 import EndlessTrafficAnimatedLogo from './animated/traffic/EndlessTrafficAnimatedLogo';
@@ -24,7 +24,7 @@ export {
   SamiroyAnimatedLogo,
   SamiroyAnimatedLogoPong,
   SamiroyBlueprintLogo,
-  AnimateGlitch,
+  AnimateGlitches,
   EndlessTrafficTitle,
   EndlessTrafficAnimatedLogo,
 };
