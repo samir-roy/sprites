@@ -1,6 +1,6 @@
 {
   "name": "@samiroy/sprites",
-  "version": "1.2.4",
+  "version": "1.2.5",
   "description": "Sprites for use on Samiroy branded websites",
   "main": "dist-pkg/index.js",
   "module": "dist-pkg/index.js",
